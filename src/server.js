@@ -1,7 +1,6 @@
 const path = require('path');
 const hbs = require('hbs');
 const express = require('express');
-const forecast = require('./forecast');
 
 const app = express();
 const publicPath = path.join(__dirname, '../public');
@@ -21,43 +20,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.render("about", {
-        title: "About weather app",
-        description: "About weather app, this is cool"
-    })
+    res.render("about")
 })
 
 app.get('/help', (req, res) => {
-    res.render("help", {
-        title: "help about weather app",
-        description: "Need help about weather app? you can find here."
-    })
+    res.render("help")
 })
 
-app.get('/weather', (req, res) => {
-    let location = req.query.location;
-    if (!location) {
-        return res.send({
-            error: "Please provide an address"
-        })
-    }
-    forecast(location, (err, details) => {
-        res.send(details);
-    })
-})
-
-app.get('/games', (req, res) => {
-    let query = req.query;
-    if (!query.search) {
-        return res.send({
-            error: "No search term given."
-        })
-    }
-    console.log(query);
-    res.send({
-        games: []
-    })
-})
 
 app.get('*', (req, res) => {
     res.render("404");
