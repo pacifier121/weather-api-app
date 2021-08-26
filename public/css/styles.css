@@ -1,0 +1,140 @@
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #F4EEFF;
+    font-family: "Raleway", sans-serif;
+}
+
+.main {
+    min-height: 70vh;
+}
+
+h1 {
+    color: #464660;
+    font-size: 50px;
+}
+
+.h3 {
+    color: #6E85B2;
+    font-size: 18px;
+}
+
+.h4 {
+    color: #6E85B2;
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    margin: 30px auto;
+    border-top: 2px solid #C9CCD5;
+}
+
+.navbar {
+    height: 50px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+}
+
+.navitem {
+    margin: 20px 0;
+    line-height: 50px;
+    color: #93B5C6;
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+}
+
+form {
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.form-search {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    height: 30px;
+    padding: 5px 10px;
+    width: 350px;
+    border: 1px solid #71C9CE;
+}
+
+.form-search:focus {
+    outline: 2px solid #A6E3E9;
+}
+
+.form-button {
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #E3FDFD;
+    background-color: #71C9CE;
+}
+
+.form-button :hover {
+    background-color: #A6E3E9;
+}
+
+.loading-text {
+    display: none;
+}
+
+.weather-info {
+    visibility: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.text-info {
+    flex: 2;
+}
+
+.img-info {
+    flex: 1;
+    text-align: center;
+}
+
+.img-info img {
+    margin: 12px 0;
+    height: 200px;
+}
+
+td {
+    width: 50%;
+    padding: 12px;
+}
+
+#msg-1,
+#msg-2,
+#msg-3,
+#msg-4 {
+    color: #30E3CA;
+}
+
+.custom404 {
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    color: #ccc;
+}
+
+.about-list li {
+    line-height: 1.5;
+    list-style-type: none;
+    color: #6E85B2;
+    font-size: 14px;
+}

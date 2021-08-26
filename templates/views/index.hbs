@@ -1,0 +1,38 @@
+{{> header}}
+    <h1>Weather App</h1>
+    <p class="h3">{{title}}</p>
+    <p class="h4">{{description}}</p>
+
+    <form>
+        <input id="location" type="text" class="form-search" autocomplete="off">
+        <button type="submit" class="form-button">Search</button>
+    </form>
+    <p class="loading-text h3">Fetching weather information...</p>
+    <div class="weather-info">
+        <div class="text-info">
+            <table>
+                <tr>
+                    <td>Location</td>
+                    <td id="msg-1"></td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td id="msg-2"></td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td id="msg-3"></td>
+                </tr>
+                <tr>
+                    <td>Forecast</td>
+                    <td id="msg-4"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="img-info">
+            <img id="weather-img" src="" alt="">
+        </div>
+    </div>
+
+    <script src="./js/events.js" type="text/javascript"></script>
+{{> footer}}
